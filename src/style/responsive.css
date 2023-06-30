@@ -1,0 +1,53 @@
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .bars {
+    display: flex;
+    width: 30%;
+  }
+  nav {
+    display: none;
+  }
+  .searchBoxParent {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bars {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  nav {
+    display: none;
+  }
+  .searchBoxParent {
+    display: none;
+  }
+  .overlay_nav .searchBoxParent {
+    display: block;
+    padding: 30px 0;
+  }
+  header {
+    flex-direction: row-reverse;
+  }
+  .mobileHeaderNav {
+    padding: 0 30px;
+  }
+  .mobileHeaderNav nav {
+    display: block;
+    width: 100%;
+  }
+  .mobileHeaderNav nav .navList {
+    flex-direction: column;
+    gap: 0;
+  }
+  .mobileHeaderNav nav .navList li {
+    text-transform: capitalize;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+  }
+  .mobileHeaderNav nav .navList li:last-child {
+    border: none;
+  }
+}/*# sourceMappingURL=responsive.css.map */
