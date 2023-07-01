@@ -59,6 +59,27 @@ nav{
         }
     }
 }
+.mobileHeaderNav{
+    padding: 0 30px;
+    nav{
+        display: block;
+        width: 100%;
+        .navList{
+            flex-direction: column;
+            gap: 0;
+            li{
+                text-transform: capitalize;
+                padding: 15px 0;
+                font-size: 15px;
+                font-weight: 500;
+                border-bottom: 1px solid var(--border);
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+    }
+}
 .logo{
     width: 15%;
     min-width: 136px;
@@ -68,26 +89,26 @@ nav{
     width: 40%;
     display: flex;
     justify-content: flex-end;
-}
-.searchBox{
-    padding: 12px 20px;
-    border: none;
-    box-shadow: 0 0 7px rgba(0,0,0,.09);
-    width: 280px;
-    border-radius: 30px;
-    .searchBoxForm{
-        justify-content: space-between;
-        input{
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 1.5384615385;
-            &::placeholder{
+    .searchBox{
+        padding: 12px 20px;
+        border: none;
+        box-shadow: 0 0 7px rgba(0,0,0,.09);
+        width: 280px;
+        border-radius: 30px;
+        .searchBoxForm{
+            justify-content: space-between;
+            input{
                 font-size: 13px;
-            }
-            &:focus{
+                font-weight: 400;
+                line-height: 1.5384615385;
                 &::placeholder{
-                    transition: 1s 1s;
-                    color: transparent;
+                    font-size: 13px;
+                }
+                &:focus{
+                    &::placeholder{
+                        transition: 1s 1s;
+                        color: transparent;
+                    }
                 }
             }
         }
@@ -97,6 +118,8 @@ nav{
     font-size: 30px;
     cursor: pointer;
     display: none;
+    justify-content: flex-end;
+    flex-direction: column;
     span{
         height: 2px;
         margin-bottom: 3px;
@@ -116,6 +139,7 @@ nav{
     }
 }
 .overlay_all{
+    z-index: 1111111111;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -150,4 +174,157 @@ nav{
         }
     }
 }
+#mainSlider{
+    width: 100%;
+    height: 680px;
+    background: url(https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/rev_home7.jpg);
+    position: relative;
+    overflow: hidden;
+    .slider_all{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        
+        .slider_card{
+            display: flex;
+            height: 460px;
+            padding: 50px 70px;
+            .img_animation{
+                left: 0;
+                top: 0;
+                position: absolute;
+                z-index: 11;
+                width: 100%;
+                height: 100%;
+                object-fit:fill;
+                animation: leftRight 8s infinite linear;
+            }
+            .slider_card_left{
+                width: 50%;    
+                position: relative;
+                z-index: 111;
+                h3{
+                    text-transform: uppercase;
+                    color: rgb(0, 0, 0);
+                    line-height: 18px;
+                    letter-spacing: 2px;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+                h1{
+                    margin: 10px 0 45px;
+                    color: rgb(0, 0, 0);
+                    max-width: 560px;
+                    line-height: 60px;
+                    letter-spacing: -1px;
+                    font-weight: 600;
+                    font-size: 58px;
+                }
+                p{
+                    line-height: 28px;
+                    letter-spacing: 0px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    max-width: 350px;
+                    margin-bottom: 45px;
+                }
+                .shopNow{
+                    a{
+                        background-color: rgb(255, 255, 255);
+                        line-height: 60px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        padding-left: 42px;
+                        border-radius: 36px;
+                        padding-right: 42px;
+                        height: 60px;
+                        display: inline-block;
+                        transition:0.3s;
+                    
+                        &:hover{
+                            background-color: var(--primary_hover);
+                            color: #fff;
+                            svg{
+                                transform: rotate(0);
+                            }
+                        }
+                        svg{
+                            transition: 0.2s;
+                            position: relative;
+                            transform: rotate(-45deg);
+                            margin-left: 10px;
+                        }
+                    }
+                }
+              
+            }
+            .slider_card_right{
+                width: 50%;
+                .orange_animation{
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: 40%;
+                    transform: translateY(-50%);
+                    background: linear-gradient(315deg, rgb(242, 167, 48) 0%, rgb(244, 214, 61) 100%);
+                    width: 470px;
+                    height: 470px;
+                    border-radius: 50%;
+                    opacity: 1;
+                    animation: blinking 2s linear infinite;
+                }
+                img{
+                    z-index: 111;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+@keyframes leftRight{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 3%;
+    }
+    100%{
+        left: 0;
+    }
+}
 
+@keyframes blinking {
+    0%{
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-50%) scale(1.05);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.swiper{
+    // padding:70px 0;
+    height: 100%;
+}
+.swiper-pagination-bullet{
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 2px solid white;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: white;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -9,12 +9,15 @@
   .searchBoxParent {
     width: 30%;
   }
+  .mobileHeaderNav .searchBoxParent {
+    display: block;
+    padding: 30px 0;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .bars {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
   }
   nav {
     display: none;
@@ -22,32 +25,45 @@
   .searchBoxParent {
     display: none;
   }
-  .overlay_nav .searchBoxParent {
-    display: block;
-    padding: 30px 0;
-  }
   header {
     flex-direction: row-reverse;
   }
-  .mobileHeaderNav {
-    padding: 0 30px;
-  }
   .mobileHeaderNav nav {
     display: block;
+  }
+  .mobileHeaderNav .searchBoxParent {
+    display: block;
+    padding: 30px 0;
+  }
+  #mainSlider .slider_all .slider_card {
+    padding: 50px 10px;
+  }
+  #mainSlider .slider_all .slider_card .slider_card_left {
     width: 100%;
   }
-  .mobileHeaderNav nav .navList {
-    flex-direction: column;
-    gap: 0;
+  #mainSlider .slider_all .slider_card .slider_card_left h1 {
+    font-size: 34px;
+    line-height: 37px;
   }
-  .mobileHeaderNav nav .navList li {
-    text-transform: capitalize;
-    padding: 15px 0;
-    font-size: 15px;
-    font-weight: 500;
-    border-bottom: 1px solid var(--border);
+  #mainSlider .slider_all .slider_card .slider_card_left a i {
+    margin-right: 5px;
   }
-  .mobileHeaderNav nav .navList li:last-child {
-    border: none;
+  #mainSlider .slider_all .slider_card .slider_card_right {
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+  }
+  #mainSlider .slider_all .slider_card .slider_card_right .orange_animation {
+    left: 5%;
+    width: 350px;
+    height: 350px;
+  }
+  #mainSlider .slider_all .slider_card .slider_card_right img {
+    max-width: 445px;
+  }
+  #mainSlider .slider_all .slider_card .img_animation {
+    background-color: rgba(255, 255, 255, 0.528);
+    z-index: 111;
+    animation: none;
   }
 }/*# sourceMappingURL=responsive.css.map */
