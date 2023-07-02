@@ -15,6 +15,13 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 import CategoryCard from "../components/homePage_components/CategoryCard";
+import SubTitle from "../components/homePage_components/SubTitle";
+import AdvantageCard from "../components/homePage_components/AdvantageCard";
+import image1 from "../images/image1.svg"
+import image2 from "../images/image2.svg"
+import image3 from "../images/image3.svg"
+import image4 from "../images/image4.svg"
+
 
 export class Home extends Component {
   render() {
@@ -81,6 +88,24 @@ export class Home extends Component {
               </div>
             </div>
           </div>
+        </section>
+        <section id="advantages">
+            <div className="container">
+              <div className="advantages_all">
+                <div className="title">
+                  <SubTitle subTitle={"LET’S GET PRINTING"}/>
+                  <h2>Reasons to get <span>printing started</span> with us</h2>
+                  <p>Our dedicated staff makes it easy for you to create a unique design that will impress your clients and make you stand out from the crowd.</p>
+                </div>
+                <div className="advantage_cards">
+          
+                  <AdvantageCard img={image1} h3={"Connect your store"} p={"Connect your store to Printec, add your products, and set your own retail prices"}/>
+                  <AdvantageCard img={image2} h3={"Customer places their order"} p={"A customer buys from your store, we charge for fulfillment, and you keep the profit"}/>
+                  <AdvantageCard img={image3} h3={"Printes fulfills the order"} p={"We take care of your order from A to Z, and control the whole fulfillment process"}/>
+                  <AdvantageCard img={image4} h3={"Order ships to your customer"} p={"Your customer receives their order with your brand attached to it"}/>
+                </div>
+              </div>
+            </div>
         </section>
       </main>
     );

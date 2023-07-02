@@ -373,4 +373,92 @@ nav{
         }
     }
 }
+.subtitle{
+    font-style: 12px;
+    font-weight: 800px;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: var(--primary);
+    height: 43px;
+}
+#advantages{
+    margin-top: 100px;
+    .advantages_all{
+        .title{
+            text-align: center;
+            margin-bottom: 87px;
+            h2{
+                font-size: 45px;
+                font-weight: 800px;
+                line-height: 50px;
+                letter-spacing: -2px;
+                max-width: 540px;
+                margin: auto;
+                span{
+                    color: var(--primary);
+                }
+                margin-bottom: 12px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                color: var(--text);
+                max-width: 595px;
+                margin: auto;
+            }
+        }
+        .advantage_cards{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .advantage_card{
+                text-align: center;
+                width: 23%;
+                &:last-child{
+                    .arrow{
+                        display: none;
+                    }
+                }
+                .img{
+                    position: relative;
+                    &:hover{
+                        .card_img{
+                            transform: scale(0.9);
+                        }
+                    }
+                    .card_img{
+                        transition: 0.3s;
+                        margin: auto;
+                    }
+                    margin-bottom: 35px;
+                    
+                }
+                .text{
+                    h3{
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        letter-spacing: -.01em;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        margin: auto;
+                        max-width: 243px;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: var(--text);
+                    }
+                }
+                .arrow{
+                    position: absolute;
+                    width: 90px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 100%;
+                }
+            }
+        }
+    }
+}
 

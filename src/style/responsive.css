@@ -66,4 +66,39 @@
     z-index: 111;
     animation: none;
   }
+  #advantages .advantages_all .advantage_cards {
+    flex-wrap: wrap;
+    row-gap: 140px;
+    justify-content: center;
+  }
+  #advantages .advantages_all .advantage_cards .advantage_card {
+    width: 90%;
+    position: relative;
+  }
+  #advantages .advantages_all .advantage_cards .advantage_card .img {
+    position: unset;
+  }
+  #advantages .advantages_all .advantage_cards .advantage_card .arrow {
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .container {
+    padding: 0 20px;
+  }
+  #categories .categories_cards {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 880px) {
+  #advantages .advantages_all .advantage_cards {
+    flex-wrap: wrap;
+    row-gap: 100px;
+  }
+  #advantages .advantages_all .advantage_cards .advantage_card {
+    width: 48%;
+  }
+  #advantages .advantages_all .advantage_cards .advantage_card .arrow {
+    display: none;
+  }
 }/*# sourceMappingURL=responsive.css.map */
