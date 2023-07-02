@@ -1,0 +1,49 @@
+ <svg xmlns:mydata="http://www.w3.org/2000/svg" mydata:contrastcolor="11111f" mydata:template="Contrast"
+        mydata:presentation="2.5" mydata:layouttype="undefined" mydata:specialfontid="undefined" mydata:id1="001"
+        mydata:id2="001" mydata:companyname="Next Print" mydata:companytagline="" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 306px;"
+        viewBox="0 0 550 470">
+        <g fill="#2cd5c4" fill-rule="nonzero" stroke="none" stroke-width="3" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <g
+                data-paper-data="{&quot;isGlobalGroup&quot;:true,&quot;bounds&quot;:{&quot;x&quot;:65,&quot;y&quot;:184.0248700784599,&quot;width&quot;:419.99999999999994,&quot;height&quot;:101.95025984308018}}">
+                <g data-paper-data="{&quot;fillRule&quot;:&quot;nonzero&quot;,&quot;fillRuleOriginal&quot;:&quot;nonzero&quot;,&quot;isIcon&quot;:true,&quot;iconStyle&quot;:&quot;standalone&quot;,&quot;selectedEffects&quot;:{&quot;container&quot;:&quot;&quot;,&quot;transformation&quot;:&quot;&quot;,&quot;pattern&quot;:&quot;&quot;},&quot;bounds&quot;:{&quot;x&quot;:65,&quot;y&quot;:185.89395817558304,&quot;width&quot;:152.80561976811555,&quot;height&quot;:98.2120836488339},&quot;iconType&quot;:&quot;icon&quot;,&quot;rawIconId&quot;:&quot;0734980c-58c4-439f-a558-f5278ea5098f&quot;,&quot;isDetailed&quot;:true,&quot;suitableAsStandaloneIcon&quot;:true}"
+                    id="element-id-60747">
+                    <path
+                        d="M101.724,221.49232v6.47243l23.07562,10.97499v-6.61314zM174.04637,192.08498v51.92014l22.93492,10.69358v-8.58301l-17.16601,-7.31666l0.70352,-1.68846l30.39228,13.50768l0.70352,-1.68846l-14.63332,-6.61314v-56.4227h-23.07562v6.19102zM217.80562,276.36727l-20.82434,-10.27146v0l-62.61372,-29.26664l15.19614,21.94998l47.41759,23.35703v-11.53781zM149.7044,260.88972l-11.39711,-5.20609l-0.84423,1.68846l16.32178,7.45737l13.36698,19.27658h29.54805zM101.724,237.25128v46.85476h23.07562v-35.45766zM67.11057,213.75355v-0.1407l-1.26635,-0.56282l-0.84423,1.68846l26.87465,12.66345l-1.12564,2.39199l34.05061,16.7439v-5.6282zM163.21208,238.93974l-36.724,-53.04578h-24.76408v19.41729l-12.80416,-1.12564z"
+                        data-paper-data="{&quot;isPathIcon&quot;:true}" id="element-id-3193"></path>
+                </g>
+            </g>
+        </g>
+       
+        <rect data-element-id="element-id-27868" stroke-width="2" fill="transparent"
+            class="invisible-element-box grouping-element" x="257" y="184" width="228" height="69"
+            data-element-name="isPrimaryText"></rect>
+        <rect data-element-id="element-id-60747" stroke-width="2" fill="transparent"
+            class="invisible-element-box grouping-element" x="65" y="186" width="153" height="98"
+            data-element-name="isIcon"></rect>
+        <rect data-element-id="element-id-3193" stroke-width="2" fill="transparent"
+            class="invisible-element-box individual-element" x="65" y="186" width="153" height="98"></rect>
+        <rect data-element-id="element-id-2937" stroke-width="2" fill="transparent"
+            class="invisible-element-box individual-element" x="257" y="184" width="61" height="69"></rect>
+        <rect data-element-id="element-id-49007" stroke-width="2" fill="transparent"
+            class="invisible-element-box individual-element" x="376" y="185" width="62" height="66"></rect>
+        <rect data-element-id="element-id-98135" stroke-width="2" fill="transparent"
+            class="invisible-element-box grouping-element" x="257" y="266" width="183" height="20"
+            data-element-name="isSecondaryText"></rect>
+        <rect data-element-id="element-id-54977" stroke-width="2" fill="transparent"
+            class="invisible-element-box individual-element" x="437" y="185" width="48" height="66"></rect>
+        <rect data-element-id="element-id-68309" stroke-width="2" fill="transparent"
+            class="invisible-element-box individual-element" x="331" y="185" width="41" height="66"></rect>
+        <rect data-element-id="element-id-19478" stroke-width="2" fill="transparent"
+            class="invisible-element-box individual-element" x="377" y="266" width="17" height="20"></rect>
+        <rect data-element-id="element-id-17781" stroke-width="2" fill="transparent"
+            class="invisible-element-box individual-element" x="257" y="267" width="14" height="19"></rect>
+        <rect data-element-id="element-id-15027" stroke-width="2" fill="transparent"
+            class="invisible-element-box individual-element" x="303" y="267" width="14" height="19"></rect>
+        <rect data-element-id="element-id-21624" stroke-width="2" fill="transparent"
+            class="invisible-element-box individual-element" x="426" y="267" width="14" height="19"></rect>
+        <rect data-element-id="element-id-20451" stroke-width="2" fill="transparent"
+            class="invisible-element-box individual-element" x="344" y="267" width="4" height="19"></rect>
+    </svg>

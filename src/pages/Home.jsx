@@ -21,6 +21,9 @@ import image1 from "../images/image1.svg"
 import image2 from "../images/image2.svg"
 import image3 from "../images/image3.svg"
 import image4 from "../images/image4.svg"
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 
 export class Home extends Component {
@@ -106,6 +109,17 @@ export class Home extends Component {
                 </div>
               </div>
             </div>
+        </section>
+        <section id="discover">
+          <div className="container">
+            <div className="discover_all">
+                  <div className="text">
+                    <h3 data-aos="zoom-in-right">SAMPLE PACKS</h3>
+                    <h2 data-aos="flip-up">Discover our best selling products</h2>
+                    <Link data-aos="fade-up">Order yours now <FontAwesomeIcon icon={faArrowRight} /></Link>
+                  </div>
+            </div>
+          </div>
         </section>
       </main>
     );

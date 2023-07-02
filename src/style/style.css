@@ -13,6 +13,16 @@
   --background_light: #F6F6F6;
 }
 
+::-moz-selection {
+  color: var(--background);
+  background: var(--primary);
+}
+
+::selection {
+  color: var(--background);
+  background: var(--primary);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f5f7fa;
@@ -93,6 +103,7 @@ nav .navList li a:hover {
   width: 15%;
   min-width: 136px;
   min-height: 28px;
+  max-height: 32px;
 }
 
 .searchBoxParent {
@@ -465,4 +476,69 @@ nav .navList li a:hover {
   top: 50%;
   transform: translateY(-50%);
   left: 100%;
+}
+
+#discover {
+  margin-top: 145px;
+}
+#discover .discover_all {
+  width: 100%;
+  height: 460px;
+  background: url(../images/banner-h7.jpg);
+  border-radius: 36px;
+  padding: 0 85px;
+}
+#discover .discover_all .text {
+  max-width: 587px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: start;
+}
+#discover .discover_all .text h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-bottom: 17px;
+}
+#discover .discover_all .text h2 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 54px;
+  letter-spacing: -2px;
+  color: #fff;
+  margin-bottom: 56px;
+}
+#discover .discover_all a {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 14px;
+  padding-left: 42px;
+  border-radius: 36px;
+  padding-right: 42px;
+  display: inline-block;
+  transition: 0.3s;
+}
+#discover .discover_all a:hover {
+  background-color: var(--background);
+  color: var(--accent);
+}
+#discover .discover_all a:hover svg {
+  transform: rotate(0);
+}
+#discover .discover_all a svg {
+  width: 15px;
+  height: 15px;
+  transition: 0.2s;
+  position: relative;
+  transform: rotate(-45deg);
+  margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */
