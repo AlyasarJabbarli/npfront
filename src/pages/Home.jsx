@@ -204,12 +204,10 @@ export class Home extends Component {
                 modules={[
                   Autoplay,
                 ]}
-                spaceBetween={0}
-                slidesPerView={5}
                 autoplay={{ delay: 3000 }}
-                speed={2000}
                 breakpoints = {{
                   0: {
+                    speed:500,
                     slidesPerView: 1,
                     spaceBetween : 20
                   },
@@ -217,6 +215,7 @@ export class Home extends Component {
                     slidesPerView: 2,
                   },
                   787: {
+                    speed: 2000,
                     spaceBetween : 0,
                     slidesPerView : 5
                   }
