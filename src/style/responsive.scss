@@ -147,6 +147,64 @@
           
         }
     }
+    #topSelling {
+        .title {
+            margin: 140px 0 70px;
+            text-align: center;
+            margin-bottom: 87px;
+    
+            h2 {
+                font-size: 45px;
+                font-weight: 800px;
+                line-height: 50px;
+                letter-spacing: -2px;
+                max-width: 540px;
+                margin: auto;
+    
+                span {
+                    color: var(--primary);
+                }
+    
+                margin-bottom: 12px;
+            }
+    
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                color: var(--text);
+                max-width: 595px;
+                margin: auto;
+            }
+        }
+        .topSellingCard {
+            transition: .3s;
+            background-color: #fff;
+            transform: scale(.98);
+            box-shadow: 0 1px 15px rgba(0, 0, 0, .07);
+            .img {
+                .buttons{
+                    transition: .3s;
+                    top: 4%;
+                    opacity: 1;
+                    left: 78%;
+                 
+                    button{
+                        &:hover{
+                            color: #fff;
+                            background: var(--primary);
+                        }
+                    }
+                }
+            }
+    
+            .text {
+                button {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width:767px) and (max-width: 880px) {

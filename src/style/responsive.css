@@ -99,6 +99,50 @@
     font-size: 40px;
     margin-bottom: 36px;
   }
+  #topSelling .title {
+    margin: 140px 0 70px;
+    text-align: center;
+    margin-bottom: 87px;
+  }
+  #topSelling .title h2 {
+    font-size: 45px;
+    font-weight: 800px;
+    line-height: 50px;
+    letter-spacing: -2px;
+    max-width: 540px;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+  #topSelling .title h2 span {
+    color: var(--primary);
+  }
+  #topSelling .title p {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--text);
+    max-width: 595px;
+    margin: auto;
+  }
+  #topSelling .topSellingCard {
+    transition: 0.3s;
+    background-color: #fff;
+    transform: scale(0.98);
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.07);
+  }
+  #topSelling .topSellingCard .img .buttons {
+    transition: 0.3s;
+    top: 4%;
+    opacity: 1;
+    left: 78%;
+  }
+  #topSelling .topSellingCard .img .buttons button:hover {
+    color: #fff;
+    background: var(--primary);
+  }
+  #topSelling .topSellingCard .text button {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 880px) {
   #advantages .advantages_all .advantage_cards {
