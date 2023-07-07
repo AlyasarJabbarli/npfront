@@ -670,4 +670,42 @@ nav .navList li a:hover {
 }
 #topSelling .topSellingCard .text button:hover {
   background-color: var(--primary);
+}
+
+#partners {
+  margin-top: 40px;
+  background-image: linear-gradient(180deg, #EDEEF1 0%, rgba(237, 238, 241, 0) 100%);
+  padding: 120px 0px;
+}
+#partners .partners_all {
+  max-width: 1005px;
+  margin: auto;
+}
+#partners .partners_all .partners_text_swiper {
+  margin-bottom: 50px;
+}
+#partners .partners_all .partners_text_swiper .partnersTextCard {
+  color: var(--accent);
+  font-family: poppins, Sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+}
+#partners .partners_all .partners_text_swiper .partnersTextCard p {
+  text-align: center;
+}
+#partners .partners_all .partners_img_swiper .partnersImgCard {
+  height: 77px;
+}
+#partners .partners_all .partners_img_swiper .partnersImgCard:hover .img_div {
+  transform: translateY(0px);
+}
+#partners .partners_all .partners_img_swiper .partnersImgCard .img_div {
+  transform: translateY(-77px);
+  transition: 0.3s;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

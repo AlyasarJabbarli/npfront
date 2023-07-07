@@ -25,6 +25,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import TopSellingCard from "../components/homePage_components/TopSellingCard";
+import PartnersTextCard from "../components/homePage_components/PartnersTextCard";
+import PartnersImgCard from "../components/homePage_components/PartnersImgCard";
 
 export class Home extends Component {
   render() {
@@ -48,6 +50,7 @@ export class Home extends Component {
               //  effect = 'fade'
               //  fadeEffect={{crossFade: true}}
               speed={2000}
+              loop={true}
             >
               <SwiperSlide>
                 <MainSliderCard
@@ -195,30 +198,34 @@ export class Home extends Component {
         <section id="topSelling">
           <div className="container">
             <div className="title">
-              <h2><span>Top Selling</span> Items</h2>
-              <p> There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered</p>
+              <h2>
+                <span>Top Selling</span> Items
+              </h2>
+              <p>
+                {" "}
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered
+              </p>
             </div>
             <div className="topSellingCards_all">
               <Swiper
-                modules={[
-                  Autoplay,
-                ]}
+                modules={[Autoplay]}
                 autoplay={{ delay: 3000 }}
-                breakpoints = {{
+                loop={true}
+                breakpoints={{
                   0: {
-                    speed:500,
+                    speed: 500,
                     slidesPerView: 1,
-                    spaceBetween : 20
+                    spaceBetween: 20,
                   },
-                  420 : {
+                  420: {
                     slidesPerView: 2,
                   },
                   787: {
                     speed: 2000,
-                    spaceBetween : 0,
-                    slidesPerView : 5
-                  }
+                    spaceBetween: 0,
+                    slidesPerView: 5,
+                  },
                 }}
               >
                 <SwiperSlide>
@@ -318,6 +325,91 @@ export class Home extends Component {
                   />
                 </SwiperSlide>
               </Swiper>
+            </div>
+          </div>
+        </section>
+        <section id="partners">
+          <div className="container">
+            <div className="partners_all">
+              <div className="partners_text_swiper">
+                <Swiper
+                  modules={[Autoplay]}
+                  autoplay={{ delay: 3000 }}
+                  spaceBetween={50}
+                  slidesPerView={1}
+                  loop={true}
+                  speed={1500}
+                >
+                  <SwiperSlide>
+                    <PartnersTextCard text="'Every time I order something it has been amazing quality, on time, they even beat my expectations. They order something and I ask if I can get it by Monday, and I'll have it the same day.'" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersTextCard text="'Every time I order something it has been amazing quality, on time, they even beat my expectations. They order something and I ask if I can get it by Monday, and I'll have it the same day.'" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersTextCard text="'Every time I order something it has been amazing quality, on time, they even beat my expectations. They order something and I ask if I can get it by Monday, and I'll have it the same day.'" />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <div className="partners_img_swiper">
+                <Swiper
+                  modules={[Autoplay]}
+                  autoplay={{ delay: 3000 }}
+                  spaceBetween={50}
+                  slidesPerView={5}
+                  loop={true}
+                  speed={1500}
+                  breakpoints={{
+                    0: {
+                      speed: 500,
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                    },
+                    300:{
+                      slidesPerView: 2,
+                    },
+                    550: {
+                      slidesPerView: 3,
+                    },
+                    787: {
+                      speed: 2000,
+                      spaceBetween: 0,
+                      slidesPerView: 5,
+                    },
+                  }}
+                >
+                  <SwiperSlide>
+                    <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-1.svg" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-2.svg" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-3.svg" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-4.svg" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-5.svg" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-6.svg" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-7.svg" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-8.svg" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-9.svg" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-10.svg" />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
         </section>
