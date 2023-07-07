@@ -452,6 +452,7 @@ nav {
     letter-spacing: 2px;
     color: var(--primary);
     height: 43px;
+    text-align: center;
 }
 
 #advantages {
@@ -651,36 +652,43 @@ nav {
             margin: auto;
         }
     }
+
     .topSellingCard {
         width: 100%;
         padding: 15px;
         border-radius: 30px;
         transition: .3s;
-        &:hover{
+
+        &:hover {
             background-color: #fff;
             transform: scale(.98);
             box-shadow: 0 1px 15px rgba(0, 0, 0, .07);
-            .text{
-                button{
+
+            .text {
+                button {
                     visibility: visible;
                     opacity: 1;
                 }
             }
         }
+
         .img {
             position: relative;
             overflow: hidden;
             margin-bottom: 20px;
-            &:hover{
-                .buttons{
+
+            &:hover {
+                .buttons {
                     top: 4%;
                     opacity: 1;
                 }
             }
+
             img {
                 border-radius: 30px;
             }
-            .buttons{
+
+            .buttons {
                 transition: .3s;
                 top: 8%;
                 left: 78%;
@@ -688,7 +696,8 @@ nav {
                 position: absolute;
                 display: flex;
                 flex-direction: column;
-                button{
+
+                button {
                     color: var(--accent);
                     background-color: #fff;
                     transition: all ease-in-out .3s;
@@ -699,8 +708,9 @@ nav {
                     text-align: center;
                     margin: 5px;
                     border-radius: 50%;
-                    box-shadow: 0 0 15px rgba(0,0,0,.05);
-                    &:hover{
+                    box-shadow: 0 0 15px rgba(0, 0, 0, .05);
+
+                    &:hover {
                         color: #fff;
                         background: var(--primary);
                     }
@@ -764,7 +774,8 @@ nav {
                 visibility: hidden;
                 opacity: 0;
                 transition: opacity .3s;
-                &:hover{
+
+                &:hover {
                     background-color: var(--primary);
                 }
             }
@@ -773,36 +784,43 @@ nav {
     }
 }
 
-#partners{
+#partners {
     margin-top: 40px;
-    background-image: linear-gradient(180deg,#EDEEF1 0%,#EDEEF100 100%);
+    background-image: linear-gradient(180deg, #EDEEF1 0%, #EDEEF100 100%);
     padding: 120px 0px;
-    .partners_all{
+
+    .partners_all {
         max-width: 1005px;
         margin: auto;
-        .partners_text_swiper{
+
+        .partners_text_swiper {
             margin-bottom: 50px;
-            .partnersTextCard{
-                color: var(--accent );
-                font-family: poppins,Sans-serif;
+
+            .partnersTextCard {
+                color: var(--accent);
+                font-family: poppins, Sans-serif;
                 font-size: 24px;
                 font-weight: 500;
                 line-height: 36px;
                 letter-spacing: -.01em;
-                p{
+
+                p {
                     text-align: center;
                 }
             }
         }
-        .partners_img_swiper{
-            .partnersImgCard{
+
+        .partners_img_swiper {
+            .partnersImgCard {
                 height: 77px;
-                &:hover{
-                    .img_div{
+
+                &:hover {
+                    .img_div {
                         transform: translateY(0px);
                     }
                 }
-                .img_div{
+
+                .img_div {
                     transform: translateY(-77px);
                     transition: .3s;
                     height: 100%;
@@ -812,5 +830,97 @@ nav {
                 }
             }
         }
+    }
+}
+
+#signUp {
+    height: 360px;
+
+    .signUp_all {
+        border-radius: 36px;
+        background: url(https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/h5-bg.jpg);
+        height: 100%;
+        padding: 30px;
+
+        .sign_up_container {
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: 148px;
+                height: 148px;
+                margin: 0 20px 0 50px;
+            }
+
+            .text {
+                max-width: 395px;
+
+                p {
+                    color: #f5f7fa;
+                    font-size: 45px;
+                    font-weight: 600;
+                    line-height: 50px;
+                    letter-spacing: -2px;
+                }
+            }
+
+            .form_div {
+                width: 50%;
+                p {
+                    font-size: 14px;
+                    line-height: 28px;
+                    color: #fff;
+                    max-width: 415px;
+                    margin-bottom: 35px;
+                }
+
+                form {
+                    width: 100%;
+                    input {
+                        max-width: 415px;
+                        width: 100%;
+                        border-radius: 100px 100px 100px 100px;
+                        margin: 0 10px 0 0;
+                        font-size: 13px;
+                        line-height: 26px;
+                        color: var(--accent);
+                        background-color: #fff;
+                        border: 1px solid transparent;
+                        font-weight: 400;
+                        padding: 16px 25px;
+                    }
+
+                    button {
+                     
+                        background-color: var(--primary);
+                        line-height: 60px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        padding-left: 42px;
+                        border-radius: 36px;
+                        padding-right: 42px;
+                        height: 60px;
+                        transition: 0.3s;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: var(--primary_hover);
+
+                            svg {
+                                transform: rotate(0);
+                            }
+                        }
+
+                        svg {
+                            transition: 0.2s;
+                            position: relative;
+                            transform: rotate(-45deg);
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }

@@ -143,6 +143,42 @@
     visibility: visible;
     opacity: 1;
   }
+  #signUp {
+    height: auto;
+  }
+  #signUp .signUp_all {
+    background-size: cover;
+  }
+  #signUp .signUp_all .sign_up_container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  #signUp .signUp_all .sign_up_container .left {
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #signUp .signUp_all .sign_up_container .form_div {
+    text-align: center;
+    width: 100%;
+  }
+  #signUp .signUp_all .sign_up_container .form_div p {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  #signUp .signUp_all .sign_up_container .form_div form {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #signUp .signUp_all .sign_up_container .form_div form button {
+    width: 100%;
+    max-width: 415px;
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 880px) {
   #advantages .advantages_all .advantage_cards {
@@ -154,5 +190,37 @@
   }
   #advantages .advantages_all .advantage_cards .advantage_card .arrow {
     display: none;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1060px) {
+  #signUp {
+    height: auto;
+  }
+  #signUp .signUp_all {
+    background-size: cover;
+  }
+  #signUp .signUp_all .sign_up_container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  #signUp .signUp_all .sign_up_container .left {
+    justify-content: center;
+    width: 100%;
+  }
+  #signUp .signUp_all .sign_up_container .form_div {
+    text-align: center;
+    width: 100%;
+  }
+  #signUp .signUp_all .sign_up_container .form_div p {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  #signUp .signUp_all .sign_up_container .form_div form {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  #signUp .signUp_all .sign_up_container .text p {
+    font-size: 35px;
   }
 }/*# sourceMappingURL=responsive.css.map */

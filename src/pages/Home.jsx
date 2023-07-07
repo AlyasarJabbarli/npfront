@@ -365,14 +365,14 @@ export class Home extends Component {
                       slidesPerView: 1,
                       spaceBetween: 20,
                     },
-                    300:{
+                    300: {
                       slidesPerView: 2,
                     },
                     550: {
                       slidesPerView: 3,
                     },
                     787: {
-                      speed: 2000,
+                      speed: 900,
                       spaceBetween: 0,
                       slidesPerView: 5,
                     },
@@ -409,6 +409,39 @@ export class Home extends Component {
                     <PartnersImgCard img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/brand-10.svg" />
                   </SwiperSlide>
                 </Swiper>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="signUp">
+          <div className="container">
+            <div className="signUp_all">
+              <div className="sign_up_container d-flex">
+                <div className="left d-flex ">
+                  <img
+                    src="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/letter-1.png"
+                    alt=""
+                  />
+                  <div className="text">
+                    <p>Sign up for exclusive offers from us</p>
+                  </div>
+                </div>
+                <div className="form_div">
+                  <p>
+                    Sign up to your newsletter for all the latest news and our
+                    villa exclusives promotion.
+                  </p>
+                  <form action="" className="d-flex">
+                    <input
+                      type="email"
+                      placeholder="Sign up for exclusive offers from us"
+                    />
+                    <button className="d-flex-center">
+                      Subscribe
+                      <FontAwesomeIcon icon={faArrowRight} />
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
