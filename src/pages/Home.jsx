@@ -202,7 +202,6 @@ export class Home extends Component {
                 <span>Top Selling</span> Items
               </h2>
               <p>
-                {" "}
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered
               </p>
@@ -214,7 +213,7 @@ export class Home extends Component {
                 loop={true}
                 breakpoints={{
                   0: {
-                    speed: 500,
+                    speed: 1000,
                     slidesPerView: 1,
                     spaceBetween: 20,
                   },
