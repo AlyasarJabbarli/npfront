@@ -17,7 +17,9 @@
     color: var(--background);
     background: var(--primary);
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f5f7fa;
@@ -922,5 +924,41 @@ nav {
             }
         }
 
+    }
+}
+
+#footer{
+    .footer_all{
+        .footer_bottom{
+            justify-content: space-between;
+            .copyright{
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 26px;
+                color: var(--text);
+                width: 30%;
+            }
+            .payment_methods{
+                width: 30%;
+            }
+            .back_to_top{
+                width: 30%;
+                font-size: 12px;
+                text-transform: uppercase;
+                line-height: 26px;
+                justify-content: flex-end;
+                font-weight: 600;
+                a{
+                    transition: .1s;
+                    &:hover{
+                        color: var(--primary);
+                    }
+                }
+                
+                svg{
+                    color: var(--primary);
+                }
+            }
+        }
     }
 }

@@ -23,6 +23,10 @@
   background: var(--primary);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f5f7fa;
@@ -789,4 +793,35 @@ nav .navList li a:hover {
   position: relative;
   transform: rotate(-45deg);
   margin-left: 10px;
+}
+
+#footer .footer_all .footer_bottom {
+  justify-content: space-between;
+}
+#footer .footer_all .footer_bottom .copyright {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--text);
+  width: 30%;
+}
+#footer .footer_all .footer_bottom .payment_methods {
+  width: 30%;
+}
+#footer .footer_all .footer_bottom .back_to_top {
+  width: 30%;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 26px;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+#footer .footer_all .footer_bottom .back_to_top a {
+  transition: 0.1s;
+}
+#footer .footer_all .footer_bottom .back_to_top a:hover {
+  color: var(--primary);
+}
+#footer .footer_all .footer_bottom .back_to_top svg {
+  color: var(--primary);
 }/*# sourceMappingURL=style.css.map */
