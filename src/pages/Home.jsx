@@ -213,7 +213,7 @@ export class Home extends Component {
                 loop={true}
                 breakpoints={{
                   0: {
-                    speed: 1000,
+                    speed: 900,
                     slidesPerView: 1,
                     spaceBetween: 20,
                   },
