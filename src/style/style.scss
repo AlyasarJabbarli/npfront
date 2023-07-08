@@ -928,9 +928,13 @@ nav {
 }
 
 #footer{
+    margin-top: 100px;
+    padding-bottom: 50px;
     .footer_all{
         .footer_bottom{
+            padding-top: 43px;
             justify-content: space-between;
+            border-top: 1px solid var(--border);
             .copyright{
                 font-size: 15px;
                 font-weight: 500;

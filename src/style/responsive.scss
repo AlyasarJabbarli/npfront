@@ -242,6 +242,27 @@
             }
         }
     }
+    #footer{
+        .footer_all{
+            .footer_bottom{
+                flex-wrap: wrap;
+                text-align: center;
+                gap: 20px;
+                .copyright{
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+                .payment_methods{
+                    width: 100%;
+                }
+                .back_to_top{
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width:767px) and (max-width: 880px) {

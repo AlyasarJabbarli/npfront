@@ -795,8 +795,14 @@ nav .navList li a:hover {
   margin-left: 10px;
 }
 
+#footer {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
 #footer .footer_all .footer_bottom {
+  padding-top: 43px;
   justify-content: space-between;
+  border-top: 1px solid var(--border);
 }
 #footer .footer_all .footer_bottom .copyright {
   font-size: 15px;

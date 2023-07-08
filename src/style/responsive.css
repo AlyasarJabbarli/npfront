@@ -179,6 +179,23 @@
     width: 100%;
     max-width: 415px;
   }
+  #footer .footer_all .footer_bottom {
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+  }
+  #footer .footer_all .footer_bottom .copyright {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #footer .footer_all .footer_bottom .payment_methods {
+    width: 100%;
+  }
+  #footer .footer_all .footer_bottom .back_to_top {
+    width: 100%;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 880px) {
   #advantages .advantages_all .advantage_cards {
