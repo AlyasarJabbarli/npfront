@@ -109,6 +109,9 @@ nav .navList li a:hover {
   min-height: 28px;
   max-height: 32px;
 }
+.logo img {
+  max-height: 160px;
+}
 
 .searchBoxParent {
   width: 40%;
