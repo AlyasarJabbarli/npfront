@@ -7,6 +7,9 @@
     display: none;
   }
   .searchBoxParent {
+    display: none;
+  }
+  .header_left {
     width: 30%;
   }
   .mobileHeaderNav .searchBoxParent {
@@ -29,6 +32,9 @@
     flex-direction: row-reverse;
   }
   .mobileHeaderNav nav {
+    display: block;
+  }
+  .mobileHeaderNav nav .navList .mobile_visible_nav {
     display: block;
   }
   .mobileHeaderNav .searchBoxParent {
@@ -196,6 +202,15 @@
     width: 100%;
     justify-content: center;
   }
+  .header_left {
+    display: none;
+  }
+  .logo {
+    justify-content: flex-start;
+  }
+  .logo img {
+    max-height: 75px;
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 880px) {
   #advantages .advantages_all .advantage_cards {
@@ -239,5 +254,45 @@
 @media screen and (max-width: 400px) {
   #signUp .signUp_all .sign_up_container .text p {
     font-size: 35px;
+  }
+}
+@media screen and (max-width: 945px) {
+  #topSelling .swiper_overlay .productCardPopUp {
+    flex-direction: column;
+    overflow: scroll;
+  }
+  #topSelling .swiper_overlay .productCardPopUp .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #topSelling .swiper_overlay .productCardPopUp .right {
+    width: 100%;
+    overflow-y: unset;
+  }
+  #topSelling .swiper_overlay .productCardPopUp .right .buttons .top_buttons {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 470px) {
+  #topSelling .swiper_overlay .productCardPopUp .right .options .product_option {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  #topSelling .swiper_overlay .productCardPopUp .right .options .product_option .select {
+    width: 100%;
+  }
+  #topSelling .swiper_overlay .productCardPopUp .right .buttons .top_buttons {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  #topSelling .swiper_overlay .productCardPopUp .right .buttons .top_buttons .quantity {
+    width: 100%;
+  }
+  #topSelling .swiper_overlay .productCardPopUp .right .buttons .top_buttons .addToCartBtn {
+    width: 100%;
   }
 }/*# sourceMappingURL=responsive.css.map */

@@ -1,3 +1,4 @@
 export const initialState = {
-    mobOverlayVisible : false
+    mobOverlayVisible : false,
+    swiperOverlayVisible : false
 }

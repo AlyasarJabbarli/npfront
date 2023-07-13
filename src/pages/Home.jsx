@@ -27,9 +27,28 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import TopSellingCard from "../components/homePage_components/TopSellingCard";
 import PartnersTextCard from "../components/homePage_components/PartnersTextCard";
 import PartnersImgCard from "../components/homePage_components/PartnersImgCard";
+import ProductCardPopUp from "../components/homePage_components/ProductCardPopUp";
+import { connect } from "react-redux";
+import { changeStateValue } from "../redux/MainReducer";
 
 export class Home extends Component {
+  state ={
+    visible : false
+  }
+  handleCloseSwiperOverlay(e){
+    console.log(e.target.classList);
+    if(e.target.classList.contains('swiper-slide')){
+      this.props.dispatch(
+        changeStateValue({
+          name: "swiperOverlayVisible",
+          value: false,
+        })
+      );
+    }
+  }
   render() {
+    const { swiperOverlayVisible } = this.props;
+
     return (
       <main>
         <section id="mainSlider">
@@ -325,6 +344,21 @@ export class Home extends Component {
                 </SwiperSlide>
               </Swiper>
             </div>
+            <div className="swiper_overlay"  onClick={this.handleCloseSwiperOverlay.bind(this)} style={swiperOverlayVisible == false ? {display:"none"} : {display:"block"}} >
+            <Swiper
+                modules={[Navigation]}
+                navigation={true}
+                loop={true}
+                slidesPerView={1}
+              >
+                <SwiperSlide>
+                  <ProductCardPopUp  title={'Cup'} price={'$14.95–$119.95'} description={"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable."} img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/mug-460x460.png" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <ProductCardPopUp title={'Mug'} price={'$14.95–$119.95'} description={"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable."} img="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/mug-460x460.png" />
+                </SwiperSlide>
+              </Swiper>
+            </div>
           </div>
         </section>
         <section id="partners">
@@ -412,42 +446,13 @@ export class Home extends Component {
             </div>
           </div>
         </section>
-        <section id="signUp">
-          <div className="container">
-            <div className="signUp_all">
-              <div className="sign_up_container d-flex">
-                <div className="left d-flex ">
-                  <img
-                    src="https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/letter-1.png"
-                    alt=""
-                  />
-                  <div className="text">
-                    <p>Sign up for exclusive offers from us</p>
-                  </div>
-                </div>
-                <div className="form_div">
-                  <p>
-                    Sign up to your newsletter for all the latest news and our
-                    villa exclusives promotion.
-                  </p>
-                  <form action="" className="d-flex">
-                    <input
-                      type="email"
-                      placeholder="Sign up for exclusive offers from us"
-                    />
-                    <button className="d-flex-center">
-                      Subscribe
-                      <FontAwesomeIcon icon={faArrowRight} />
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      
       </main>
     );
   }
 }
 
-export default Home;
+const mapStateToProps = (state) => ({
+  swiperOverlayVisible: state.Data.swiperOverlayVisible,
+});
+export default connect(mapStateToProps)(Home);
