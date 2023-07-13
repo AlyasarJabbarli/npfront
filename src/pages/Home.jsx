@@ -207,7 +207,7 @@ export class Home extends Component {
               <div className="text">
                 <h3 data-aos="zoom-in-right">SAMPLE PACKS</h3>
                 <h2 data-aos="flip-up">Discover our best selling products</h2>
-                <Link data-aos="fade-up">
+                <Link to={'/shop'} data-aos="fade-up">
                   Order yours now <FontAwesomeIcon icon={faArrowRight} />
                 </Link>
               </div>

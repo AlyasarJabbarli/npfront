@@ -689,7 +689,8 @@ nav .navList li a:hover {
   max-width: 595px;
   margin: auto;
 }
-#topSelling .swiper_overlay {
+
+.swiper_overlay {
   top: 0;
   left: 0;
   position: fixed;
@@ -698,10 +699,10 @@ nav .navList li a:hover {
   width: 100%;
   height: 100vh;
 }
-#topSelling .swiper_overlay .swiper-slide {
+.swiper_overlay .swiper-slide {
   display: flex;
 }
-#topSelling .swiper_overlay .productCardPopUp {
+.swiper_overlay .productCardPopUp {
   background-color: #fff;
   margin: auto;
   height: 460px;
@@ -709,80 +710,80 @@ nav .navList li a:hover {
   min-width: 288px;
   max-width: 920px;
 }
-#topSelling .swiper_overlay .productCardPopUp .img {
+.swiper_overlay .productCardPopUp .img {
   width: 50%;
 }
-#topSelling .swiper_overlay .productCardPopUp .right {
+.swiper_overlay .productCardPopUp .right {
   width: 50%;
   overflow-y: scroll;
   padding: 20px;
 }
-#topSelling .swiper_overlay .productCardPopUp .right .productCardPopUp_title h3 {
+.swiper_overlay .productCardPopUp .right .productCardPopUp_title h3 {
   font-size: 36px;
   line-height: 1;
   font-weight: 800;
   margin-bottom: 16px;
   color: var(--accent);
 }
-#topSelling .swiper_overlay .productCardPopUp .right .price {
+.swiper_overlay .productCardPopUp .right .price {
   margin-bottom: 28px;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--border);
 }
-#topSelling .swiper_overlay .productCardPopUp .right .price p {
+.swiper_overlay .productCardPopUp .right .price p {
   color: #363636;
   font-size: 25px;
   line-height: 1;
   font-weight: 600;
 }
-#topSelling .swiper_overlay .productCardPopUp .right .price .discountPrice {
+.swiper_overlay .productCardPopUp .right .price .discountPrice {
   color: #e84040;
 }
-#topSelling .swiper_overlay .productCardPopUp .right .price .oldPrice {
+.swiper_overlay .productCardPopUp .right .price .oldPrice {
   font-weight: 600;
   font-size: 14px;
   line-height: 26px;
   color: var(--text_light);
 }
-#topSelling .swiper_overlay .productCardPopUp .description {
+.swiper_overlay .productCardPopUp .description {
   margin-bottom: 42px;
 }
-#topSelling .swiper_overlay .productCardPopUp .description p {
+.swiper_overlay .productCardPopUp .description p {
   font-size: 14px;
   line-height: 1.7142857143;
   text-rendering: optimizeLegibility;
   color: var(--text);
   font-family: var(--e-global-typography-text-font-family);
 }
-#topSelling .swiper_overlay .productCardPopUp .options .product_option {
+.swiper_overlay .productCardPopUp .options .product_option {
   justify-content: space-between;
   align-items: center;
 }
-#topSelling .swiper_overlay .productCardPopUp .options .product_option h4 {
+.swiper_overlay .productCardPopUp .options .product_option h4 {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   color: var(--accent);
 }
-#topSelling .swiper_overlay .productCardPopUp .options .product_option .select {
+.swiper_overlay .productCardPopUp .options .product_option .select {
   padding: 12px 35px 12px 25px;
   color: var(--text);
   background-color: #edeef1;
   border-radius: 30px;
   width: 70%;
 }
-#topSelling .swiper_overlay .productCardPopUp .options .product_option .select select {
+.swiper_overlay .productCardPopUp .options .product_option .select select {
   outline: none;
   width: 100%;
   vertical-align: middle;
 }
-#topSelling .swiper_overlay .productCardPopUp .options .product_option .select select option {
+.swiper_overlay .productCardPopUp .options .product_option .select select option {
   color: var(--text);
   border: none;
   width: 110%;
   background: var(--background_light);
 }
-#topSelling .swiper_overlay .productCardPopUp .price2 {
+.swiper_overlay .productCardPopUp .price2 {
   font-size: 24px;
   line-height: 1;
   font-weight: 500;
@@ -790,13 +791,13 @@ nav .navList li a:hover {
   align-items: center;
   color: var(--primary);
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons {
+.swiper_overlay .productCardPopUp .buttons {
   margin-top: 40px;
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .top_buttons {
+.swiper_overlay .productCardPopUp .buttons .top_buttons {
   align-items: center;
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .top_buttons .quantity {
+.swiper_overlay .productCardPopUp .buttons .top_buttons .quantity {
   justify-content: space-between;
   align-items: center;
   width: 150px;
@@ -806,27 +807,27 @@ nav .navList li a:hover {
   border-radius: 30px;
   margin-right: 10px;
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .top_buttons .quantity span {
+.swiper_overlay .productCardPopUp .buttons .top_buttons .quantity span {
   font-size: 14px;
   font-weight: 800;
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .top_buttons .quantity button {
+.swiper_overlay .productCardPopUp .buttons .top_buttons .quantity button {
   border-radius: 100%;
   width: 26px;
   height: 26px;
   font-size: 20px;
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .top_buttons .quantity button:hover {
+.swiper_overlay .productCardPopUp .buttons .top_buttons .quantity button:hover {
   background: #fff;
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .top_buttons .addToCartBtn {
+.swiper_overlay .productCardPopUp .buttons .top_buttons .addToCartBtn {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: 60%;
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .top_buttons .addToCartBtn button {
+.swiper_overlay .productCardPopUp .buttons .top_buttons .addToCartBtn button {
   font-size: 14px;
   line-height: 24px;
   font-weight: 800;
@@ -839,20 +840,20 @@ nav .navList li a:hover {
   color: #fff;
   border-radius: 30px;
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .top_buttons .addToCartBtn button:hover {
+.swiper_overlay .productCardPopUp .buttons .top_buttons .addToCartBtn button:hover {
   background-color: var(--primary);
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .top_buttons .addToCartBtn .disabledBtn {
+.swiper_overlay .productCardPopUp .buttons .top_buttons .addToCartBtn .disabledBtn {
   cursor: not-allowed;
   background-color: rgb(64, 64, 64);
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .top_buttons .addToCartBtn .disabledBtn:hover {
+.swiper_overlay .productCardPopUp .buttons .top_buttons .addToCartBtn .disabledBtn:hover {
   background-color: rgb(64, 64, 64);
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .sub_buttons {
+.swiper_overlay .productCardPopUp .buttons .sub_buttons {
   margin-top: 20px;
 }
-#topSelling .swiper_overlay .productCardPopUp .buttons .sub_buttons button {
+.swiper_overlay .productCardPopUp .buttons .sub_buttons button {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
@@ -867,16 +868,16 @@ nav .navList li a:hover {
           clip-path: none;
   color: var(--accent);
 }
-#topSelling .swiper_overlay .productCardPopUp .properties {
+.swiper_overlay .productCardPopUp .properties {
   margin-top: 30px;
 }
-#topSelling .swiper_overlay .productCardPopUp .properties li {
+.swiper_overlay .productCardPopUp .properties li {
   color: var(--light);
   font-weight: 500;
   font-size: 14px;
   line-height: 2.1428571429;
 }
-#topSelling .swiper_overlay .productCardPopUp .properties li span {
+.swiper_overlay .productCardPopUp .properties li span {
   color: var(--accent);
 }
 
@@ -1241,4 +1242,35 @@ nav .navList li a:hover {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+#content .content_all .primary .change_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+#content .content_all .primary .change_page .previous, #content .content_all .primary .change_page .next {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+}
+#content .content_all .primary .change_page .previous a, #content .content_all .primary .change_page .next a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+#content .content_all .primary .change_page .numbers a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+#content .content_all .primary .change_page .numbers a:hover {
+  color: var(--primary);
+}
+#content .content_all .primary .change_page .numbers a.active {
+  background-color: var(--primary);
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

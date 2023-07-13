@@ -10,7 +10,7 @@ export class MainSliderCard extends Component {
     Aos.init();
   }
   render() {
-    const { h3, h1, p, link, img } = this.props;
+    const { h3, h1, p, img } = this.props;
     return (
       <div className="slider_card_all">
         <div className="slider_card">
@@ -50,7 +50,7 @@ export class MainSliderCard extends Component {
               data-aos-delay="800"
               className="shopNow"
             >
-              <Link to={link}>
+              <Link to={'/shop'}>
                 Shop Now <FontAwesomeIcon icon={faArrowRight} />{" "}
               </Link>
             </div>

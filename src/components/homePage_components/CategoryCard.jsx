@@ -6,7 +6,7 @@ export class CategoryCard extends Component {
     const { title, img } = this.props;
     return (
       <div className="categoryCard">
-        <Link>
+        <Link to={'/shop'}>
           <h3>{title}</h3>
           <div className="img">
             <img src={img} alt="" />
