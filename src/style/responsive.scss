@@ -21,6 +21,7 @@
             width: 100%;
         }
     }
+   
 }
 
 @media screen and (max-width:767px) {
@@ -279,6 +280,7 @@
            max-height: 75px;
         }
     }
+ 
 }
 
 @media screen and (min-width:767px) and (max-width: 880px) {
@@ -396,6 +398,44 @@
                                 width: 100%;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    #content {
+        .content_all {
+            .primary {
+                .top{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #content {
+        .searchBoxParent{
+            display: block;
+        }
+        .content_all {
+            .secondary {
+                display: none;
+                width: 310px;
+               
+            }
+            .primary {
+                width: 100%;
+
+                .top{
+                    p{
+                        display: none;
+                    }
+                    .filter{
+                        display: block;
                     }
                 }
             }

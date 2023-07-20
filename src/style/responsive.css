@@ -295,4 +295,27 @@
   #topSelling .swiper_overlay .productCardPopUp .right .buttons .top_buttons .addToCartBtn {
     width: 100%;
   }
+  #content .content_all .primary .top {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #content .searchBoxParent {
+    display: block;
+  }
+  #content .content_all .secondary {
+    display: none;
+    width: 310px;
+  }
+  #content .content_all .primary {
+    width: 100%;
+  }
+  #content .content_all .primary .top p {
+    display: none;
+  }
+  #content .content_all .primary .top .filter {
+    display: block;
+  }
 }/*# sourceMappingURL=responsive.css.map */
