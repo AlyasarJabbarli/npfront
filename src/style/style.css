@@ -571,6 +571,10 @@ nav .navList li a:hover {
   transform: scale(0.98);
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.07);
 }
+.topSellingCard:hover .img .buttons {
+  top: 4%;
+  opacity: 1;
+}
 .topSellingCard:hover .text button {
   visibility: visible;
   opacity: 1;
@@ -579,10 +583,6 @@ nav .navList li a:hover {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
-}
-.topSellingCard .img:hover .buttons {
-  top: 4%;
-  opacity: 1;
 }
 .topSellingCard .img img {
   border-radius: 30px;
