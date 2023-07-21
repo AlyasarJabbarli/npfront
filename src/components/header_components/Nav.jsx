@@ -10,7 +10,7 @@ export class Nav extends Component {
             <NavLink to={"/"}>home</NavLink>
           </li>
           <li>
-            <NavLink to={"/Shop"}>shop</NavLink>
+            <NavLink to={"/shop"}>shop</NavLink>
           </li>
           <li className="mobile_visible_nav">
             <NavLink to={"/login"}>login</NavLink>
@@ -31,7 +31,7 @@ export class Nav extends Component {
             <NavLink to={""}>pages</NavLink>
           </li>
           <li>
-            <NavLink to={""}>contact us</NavLink>
+            <NavLink to={"/contact"}>contact us</NavLink>
           </li>
         </ul>
       </nav>

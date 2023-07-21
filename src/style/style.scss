@@ -1593,3 +1593,137 @@ nav {
         }
     }
 }
+
+#getInTouch{
+    margin-top: 120px;
+    .title {
+        text-align: center;
+        margin-bottom: 87px;
+
+        h2 {
+            font-size: 45px;
+            font-weight: 800px;
+            line-height: 50px;
+            letter-spacing: -2px;
+            max-width: 540px;
+            margin: auto;
+            margin-bottom: 30px;
+            span {
+                color: var(--primary);
+            }
+
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            color: var(--text);
+            max-width: 716px;
+            margin: auto;
+        }
+    }
+    .cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+    }
+    .getInTouch_card{
+        width: 100%;
+        .img{
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        .text{
+            text-align: center;
+            h3{
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+                letter-spacing: -.01em;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 1.7142857143;
+                color: var(--text);
+            }
+        }
+    }
+}
+#sendMessage{
+    margin-top: 100px;
+    .title {
+        text-align: center;
+        margin-bottom: 87px;
+
+        h2 {
+            font-size: 45px;
+            font-weight: 800px;
+            line-height: 50px;
+            letter-spacing: -2px;
+            max-width: 540px;
+            margin: auto;
+            margin-bottom: 30px;
+            span {
+                color: var(--primary);
+            }
+
+            margin-bottom: 12px;
+        }
+    }
+    .form{
+        form{
+            max-width: 930px;
+            margin: auto;
+            input,textarea{
+                width: 100%;
+                height: 100%;
+                border: none;
+                color: var(--light);
+                font-size: 14px;
+                padding: 17px 25px;
+                border-radius: 36px;
+                background-color: #fff;
+                margin-bottom: 30px;
+            }
+            .name_email{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                input{
+                    width: 49%;
+                }
+            }
+            .button{
+                display: flex;
+                justify-content: center;
+                button{
+                    padding: 18px 44px;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    line-height: 24px;
+                    color: #fff;
+                    border: none;
+                    background-color: var(--accent);
+                    border-radius: 30px;
+                    transition: .3s;
+                    svg{
+                        transform: rotate(-45deg);
+                        margin-left: 5px;
+                        transition: .3s;
+                    }
+                    &:hover{
+                        background: var(--primary);
+                        svg{
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

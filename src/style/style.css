@@ -1331,4 +1331,132 @@ nav .navList li a:hover {
 #content .content_all .primary .change_page .numbers a.active {
   background-color: var(--primary);
   color: #fff;
+}
+
+#getInTouch {
+  margin-top: 120px;
+}
+#getInTouch .title {
+  text-align: center;
+  margin-bottom: 87px;
+}
+#getInTouch .title h2 {
+  font-size: 45px;
+  font-weight: 800px;
+  line-height: 50px;
+  letter-spacing: -2px;
+  max-width: 540px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-bottom: 12px;
+}
+#getInTouch .title h2 span {
+  color: var(--primary);
+}
+#getInTouch .title p {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text);
+  max-width: 716px;
+  margin: auto;
+}
+#getInTouch .cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+#getInTouch .getInTouch_card {
+  width: 100%;
+}
+#getInTouch .getInTouch_card .img {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#getInTouch .getInTouch_card .text {
+  text-align: center;
+}
+#getInTouch .getInTouch_card .text h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+#getInTouch .getInTouch_card .text p {
+  font-size: 14px;
+  line-height: 1.7142857143;
+  color: var(--text);
+}
+
+#sendMessage {
+  margin-top: 100px;
+}
+#sendMessage .title {
+  text-align: center;
+  margin-bottom: 87px;
+}
+#sendMessage .title h2 {
+  font-size: 45px;
+  font-weight: 800px;
+  line-height: 50px;
+  letter-spacing: -2px;
+  max-width: 540px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-bottom: 12px;
+}
+#sendMessage .title h2 span {
+  color: var(--primary);
+}
+#sendMessage .form form {
+  max-width: 930px;
+  margin: auto;
+}
+#sendMessage .form form input, #sendMessage .form form textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: var(--light);
+  font-size: 14px;
+  padding: 17px 25px;
+  border-radius: 36px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+#sendMessage .form form .name_email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#sendMessage .form form .name_email input {
+  width: 49%;
+}
+#sendMessage .form form .button {
+  display: flex;
+  justify-content: center;
+}
+#sendMessage .form form .button button {
+  padding: 18px 44px;
+  font-size: 14px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+  background-color: var(--accent);
+  border-radius: 30px;
+  transition: 0.3s;
+}
+#sendMessage .form form .button button svg {
+  transform: rotate(-45deg);
+  margin-left: 5px;
+  transition: 0.3s;
+}
+#sendMessage .form form .button button:hover {
+  background: var(--primary);
+}
+#sendMessage .form form .button button:hover svg {
+  transform: rotate(0deg);
 }/*# sourceMappingURL=style.css.map */
