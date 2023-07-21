@@ -11,9 +11,11 @@
     .searchBoxParent {
         display: none;
     }
-    .header_left{
+
+    .header_left {
         width: 30%;
     }
+
     .mobileHeaderNav {
         .searchBoxParent {
             display: block;
@@ -21,7 +23,16 @@
             width: 100%;
         }
     }
-   
+
+    #getInTouch {
+        .cards {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+            gap: 30px;
+        }
+    }
+
 }
 
 @media screen and (max-width:767px) {
@@ -44,8 +55,9 @@
     .mobileHeaderNav {
         nav {
             display: block;
+
             .navList {
-                .mobile_visible_nav{
+                .mobile_visible_nav {
                     display: block;
                 }
             }
@@ -138,29 +150,32 @@
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         }
     }
+
     #discover {
         .discover_all {
-            padding: 0 15px;    
+            padding: 0 15px;
+
             .text {
                 h3 {
                     font-size: 14px;
                 }
-    
+
                 h2 {
                     font-size: 40px;
                     margin-bottom: 36px;
                 }
             }
-    
-          
+
+
         }
     }
+
     #topSelling {
         .title {
             margin: 140px 0 70px;
             text-align: center;
             margin-bottom: 87px;
-    
+
             h2 {
                 font-size: 45px;
                 font-weight: 800px;
@@ -168,14 +183,14 @@
                 letter-spacing: -2px;
                 max-width: 540px;
                 margin: auto;
-    
+
                 span {
                     color: var(--primary);
                 }
-    
+
                 margin-bottom: 12px;
             }
-    
+
             p {
                 font-size: 14px;
                 line-height: 24px;
@@ -184,27 +199,29 @@
                 margin: auto;
             }
         }
+
         .topSellingCard {
             transition: .3s;
             background-color: #fff;
             transform: scale(.98);
             box-shadow: 0 1px 15px rgba(0, 0, 0, .07);
+
             .img {
-                .buttons{
+                .buttons {
                     transition: .3s;
                     top: 4%;
                     opacity: 1;
                     left: 78%;
-                 
-                    button{
-                        &:hover{
+
+                    button {
+                        &:hover {
                             color: #fff;
                             background: var(--primary);
                         }
                     }
                 }
             }
-    
+
             .text {
                 button {
                     visibility: visible;
@@ -213,15 +230,18 @@
             }
         }
     }
+
     #signUp {
-        height: auto;    
+        height: auto;
+
         .signUp_all {
-            background-size: cover;    
+            background-size: cover;
 
             .sign_up_container {
                 flex-wrap: wrap;
                 gap: 30px;
-                .left{
+
+                .left {
                     justify-content: center;
                     width: 100%;
                     gap: 30px;
@@ -229,19 +249,23 @@
                     align-items: center;
                     text-align: center;
                 }
+
                 .form_div {
                     text-align: center;
                     width: 100%;
-                    p{
+
+                    p {
                         margin: auto;
                         margin-bottom: 30px;
                     }
-                    form{
+
+                    form {
                         justify-content: center;
                         flex-direction: column;
                         align-items: center;
                         gap: 20px;
-                        button{
+
+                        button {
                             width: 100%;
                             max-width: 415px;
                         }
@@ -250,42 +274,50 @@
             }
         }
     }
-    #footer{
-        .footer_all{
-            .footer_bottom{
+
+    #footer {
+        .footer_all {
+            .footer_bottom {
                 flex-wrap: wrap;
                 text-align: center;
                 gap: 20px;
-                .copyright{
+
+                .copyright {
                     justify-content: center;
                     align-items: center;
                     width: 100%;
                 }
-                .payment_methods{
+
+                .payment_methods {
                     width: 100%;
                 }
-                .back_to_top{
+
+                .back_to_top {
                     width: 100%;
                     justify-content: center;
                 }
             }
         }
     }
-    .header_left{
+
+    .header_left {
         display: none;
     }
+
     .logo {
         justify-content: flex-start;
-        img{
-           max-height: 75px;
+
+        img {
+            max-height: 75px;
         }
     }
-    #getInTouch{
-        .cards{
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+    #getInTouch {
+        .cards {
+            grid-template-columns: repeat(1, minmax(280px, 1fr));
         }
     }
- 
+
 }
 
 @media screen and (min-width:767px) and (max-width: 880px) {
@@ -309,33 +341,39 @@
 
 @media screen and (min-width:767px) and (max-width: 1060px) {
     #signUp {
-        height: auto;    
+        height: auto;
+
         .signUp_all {
-            background-size: cover;    
+            background-size: cover;
 
             .sign_up_container {
                 flex-wrap: wrap;
                 gap: 30px;
-                .left{
+
+                .left {
                     justify-content: center;
                     width: 100%;
                 }
+
                 .form_div {
                     text-align: center;
                     width: 100%;
-                    p{
+
+                    p {
                         margin: auto;
                         margin-bottom: 30px;
                     }
-                    form{
+
+                    form {
                         justify-content: center;
- 
+
                     }
                 }
             }
         }
     }
 }
+
 @media screen and (max-width:400px) {
     #signUp {
         .signUp_all {
@@ -351,20 +389,23 @@
 }
 
 @media screen and (max-width: 945px) {
-    #topSelling {
+    #topSelling,#content {
         .swiper_overlay {
             .productCardPopUp {
                 flex-direction: column;
                 overflow: scroll;
-                .img{
+
+                .img {
                     width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                 }
+
                 .right {
                     width: 100%;
-                    overflow-y:unset;
+                    overflow-y: unset;
+
                     .buttons {
                         .top_buttons {
                             justify-content: space-between;
@@ -386,19 +427,23 @@
                             flex-direction: column;
                             align-items: flex-start;
                             gap: 10px;
+
                             .select {
                                 width: 100%;
                             }
                         }
                     }
+
                     .buttons {
                         .top_buttons {
                             flex-direction: column;
                             gap: 20px;
                             align-items: flex-start;
+
                             .quantity {
                                 width: 100%;
                             }
+
                             .addToCartBtn {
                                 width: 100%;
                             }
@@ -408,10 +453,11 @@
             }
         }
     }
+
     #content {
         .content_all {
             .primary {
-                .top{
+                .top {
                     flex-wrap: wrap;
                     justify-content: center;
                     gap: 10px;
@@ -423,23 +469,26 @@
 
 @media screen and (max-width: 1000px) {
     #content {
-        .searchBoxParent{
+        .searchBoxParent {
             display: block;
         }
+
         .content_all {
             .secondary {
                 display: none;
                 width: 310px;
-               
+
             }
+
             .primary {
                 width: 100%;
 
-                .top{
-                    p{
+                .top {
+                    p {
                         display: none;
                     }
-                    .filter{
+
+                    .filter {
                         display: block;
                     }
                 }

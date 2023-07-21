@@ -17,6 +17,12 @@
     padding: 30px 0;
     width: 100%;
   }
+  #getInTouch .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 767px) {
   .bars {
@@ -212,7 +218,7 @@
     max-height: 75px;
   }
   #getInTouch .cards {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(1, minmax(280px, 1fr));
   }
 }
 @media screen and (min-width: 767px) and (max-width: 880px) {
@@ -260,21 +266,21 @@
   }
 }
 @media screen and (max-width: 945px) {
-  #topSelling .swiper_overlay .productCardPopUp {
+  #topSelling .swiper_overlay .productCardPopUp, #content .swiper_overlay .productCardPopUp {
     flex-direction: column;
     overflow: scroll;
   }
-  #topSelling .swiper_overlay .productCardPopUp .img {
+  #topSelling .swiper_overlay .productCardPopUp .img, #content .swiper_overlay .productCardPopUp .img {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #topSelling .swiper_overlay .productCardPopUp .right {
+  #topSelling .swiper_overlay .productCardPopUp .right, #content .swiper_overlay .productCardPopUp .right {
     width: 100%;
     overflow-y: unset;
   }
-  #topSelling .swiper_overlay .productCardPopUp .right .buttons .top_buttons {
+  #topSelling .swiper_overlay .productCardPopUp .right .buttons .top_buttons, #content .swiper_overlay .productCardPopUp .right .buttons .top_buttons {
     justify-content: space-between;
   }
 }
