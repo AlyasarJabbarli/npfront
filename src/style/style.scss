@@ -1727,3 +1727,48 @@ nav {
         }
     }
 }
+
+#heading{
+    width: 100%;
+    background-image: url("https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/global_bc.jpg");
+    background-size: cover;
+    height: 90px;
+    background-position: center;
+}
+
+#productDetail{
+    margin-top: 100px;
+    .productDetail_all{
+        .left{
+            height: 581.469px;
+            gap: 10px;
+            .photos{
+                width: 110px;
+                height: 100%;
+                overflow: hidden;
+                .photo_div{
+                    max-width: 165px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                    border-radius: 30px;
+                    opacity: .6;
+                    transition: .4s;
+                    img{
+                        object-fit: cover;
+                        border-radius: 30px;
+                    }
+                }
+            }
+            .main_photo{
+                width: 567.297px;
+                border-radius: 30px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}

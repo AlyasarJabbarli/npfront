@@ -1459,4 +1459,49 @@ nav .navList li a:hover {
 }
 #sendMessage .form form .button button:hover svg {
   transform: rotate(0deg);
+}
+
+#heading {
+  width: 100%;
+  background-image: url("https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/global_bc.jpg");
+  background-size: cover;
+  height: 90px;
+  background-position: center;
+}
+
+#productDetail {
+  margin-top: 100px;
+}
+#productDetail .productDetail_all .left {
+  height: 581.469px;
+  gap: 10px;
+}
+#productDetail .productDetail_all .left .photos {
+  width: 110px;
+  height: 100%;
+  overflow: hidden;
+}
+#productDetail .productDetail_all .left .photos .photo_div {
+  max-width: 165px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+#productDetail .productDetail_all .left .photos .photo_div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+#productDetail .productDetail_all .left .main_photo {
+  width: 567.297px;
+  border-radius: 30px;
+}
+#productDetail .productDetail_all .left .main_photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
 }/*# sourceMappingURL=style.css.map */
